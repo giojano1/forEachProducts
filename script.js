@@ -68,6 +68,7 @@ createSec1.addEventListener("click", function () {
 
     let price = document.createElement("p");
     price.textContent = products1[i].price;
+    card.appendChild(price);
   }
   createSec1.style.display = "none";
 });
@@ -89,7 +90,7 @@ createSec2.addEventListener("click", function () {
 
     let price = document.createElement("p");
     price.textContent = products2[i].price;
-    createSec2.style.display = "none";
+    card.appendChild(price);
 
     let colorDiv = document.createElement("div");
     colorDiv.className = "color";
@@ -103,4 +104,5 @@ createSec2.addEventListener("click", function () {
     colorDiv.appendChild(colorBox2);
     card.appendChild(colorDiv);
   }
+  createSec2.style.display = "none";
 });
